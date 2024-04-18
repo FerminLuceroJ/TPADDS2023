@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <!--===============================================================================================-->
+
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/home">
+                <img class="utn-logo" src="/public/IMG/logo-utn.png" alt="LogoUTN" width="300" height="50">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li class="nav-item">Nosotros</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="form-container">
+            <form method="post">
+                <div class="form-title-container">
+                    <h3>¡Forma parte!</h3>
+                    <p style="margin-top: 15px;"> Los campos con * son obligatorios</p>
+                </div>
+
+                <div class="form-desc-container">
+                    <p> </p>
+                </div>
+
+                <div class="grid-item wrap-input100 validate-input" data-validate="Un nombre de usuario es requerido">
+                    <label for="">Usuario *</label>
+                    <input id="usuario" type="text" name="usuario" value="" class="text-input input100" placeholder="Usuario">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="grid-item wrap-input100 validate-input" data-validate="Una contraseña es requerida">
+                    <label for="">Contraseña *</label>
+                    <input id="contraseña" type="text" name="contraseña" value="" class="text-input input100" placeholder="Contraseña">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+
+                </div>
+
+                <div class="grid-item wrap-input100 validate-input" data-validate="Ingrese su Nombre">
+                    <label for="">Nombre *</label>
+                    <input id="nombre" type="text" name="nombre" value="" class="text-input input100" placeholder="Nombre">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="grid-item wrap-input100 validate-input" data-validate="Ingrese su apellido">
+                    <label for="">Apellido *</label>
+                    <input id="apellido" type="text" name="apellido" value="" class="text-input input100" placeholder="Apellido">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="grid-item wrap-input100 validate-input" data-validate="Ingrese un DNI valido">
+                    <label for="">DNI *</label>
+                    <input id="dni" type="text" name="dni" value="" class="text-input input100" placeholder="DNI">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="grid-item wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <label for="">Email</label>
+                    <input id="email" class="text-input input100" type="text" name="email" value="" placeholder="Email">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="grid-item wrap-input100">
+                    <label for="">Telefono</label>
+                    <input id="telefono" type="text" name="telefono" value="" class="text-input input100" placeholder="Telefono">
+                </div>
+
+                <div class="grid-item">
+                    <label for="">Medio de notificacion preferido *</label>
+                    <div class="radio-butons">
+
+                        <div class="radio-item">
+                            <label for=""> Mail </label>
+                            <input type="radio" name="medio-notificacion" id="medio-notificacion" value="email">
+                        </div>
+
+                        <div class="radio-item">
+                            <label for=""> Whatsapp </label>
+                            <input type="radio" name="medio-notificacion" id="medio-notificacion" value="whatsapp">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid-item wrap-input100">
+                    <label for="">Localidad</label>
+                    <select name ="" class="text-input input100">
+                        <option value="">Buenos aires</option>
+                        <option value="">Otros...</option>
+                    </select>
+                </div>
+
+
+                <div class="grid-item container-submit100-form-btn">
+                    <button id="btn-submit" class="submit100-form-btn btn btn-submit">
+                        Enviar
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+	<script src="js/registro.js"></script>
+
+</body>
+</html>

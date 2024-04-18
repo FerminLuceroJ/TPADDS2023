@@ -1,0 +1,134 @@
+body{
+    background-color: #F4D03F;
+}
+
+header{
+    background-color: #AEAFAD;
+    height: 65px;
+    width: 100vw;
+}
+
+header div{
+    width: 92%;
+    height: 100%;
+    /*text-align: center;*/
+}
+
+.utn-logo{
+    height:100%;
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+header div img{
+    height: 90%;
+}
+
+nav{
+    display: inline;
+    float: right;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    margin-top: 20px;
+    padding-right: 5px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.main-nav ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.form-container{
+    width: 70%;
+}
+
+
+.form-title-container{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.form-desc-container{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.form-desc-container p{
+    font-size: 20px;
+}
+
+.form-container h3{
+    font-size: 32px;
+    color:black
+}
+
+
+.form-title-container{
+    display: inline-block;
+}
+
+form{
+    background-color: #AEAFAD;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-radius: 24px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto auto;
+    padding: 45px
+}
+
+.grid-item label{
+    display: block;
+    margin-top: 10px;
+}
+
+.grid-item .text-input{
+    width: 100%;
+    background-color: #F4D03F;
+    border: none;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.form-buttons{
+    padding-top: 50px;
+    justify-content: space-between;
+    padding-left: 125px;
+}
+
+.btn{
+    background-color: #F4D03F;
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    border-radius: 24px;
+    font-size: 14px;
+    padding: 10px 25px 10px 25px;
+}
+
+

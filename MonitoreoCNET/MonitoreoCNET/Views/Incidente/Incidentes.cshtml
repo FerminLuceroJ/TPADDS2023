@@ -1,0 +1,41 @@
+@model List<MonitoreoCNET.Models.Incidentes.Incidente>
+
+@{
+    ViewData["Title"] = "Incidentes";
+}
+
+<h2>Incidentes</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <tr>
+            <th>Servicio afectado</th>
+            <th>Establecimiento</th>
+            <th>Entidad</th>
+            <th>Descripcion</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        @foreach (var incidente in Model)
+        {
+            <tbody>
+            <tr>
+                <td>@incidente.ServicioAfectado.Servicio.Nombre</td>
+                <td>@incidente.ServicioAfectado.Establecimiento.Nombre</td>
+                <td>@incidente.ServicioAfectado.Establecimiento.Entidad.Nombre</td>
+                <td>@incidente.Descripcion</td>
+                <td>@incidente.Estado</td>
+                <td>                 <!--No haria falta poner el /cerrar no? Con el que el metodo sea put/delete ya se contempla-->
+                    <!--<a method="post" class="btn btn-secondary" href="/incidentes/{{this.id}}/cerrar"><i method="post" class="fa-solid fa-times">-->
+                    <a class="btn btn-secondary" href="/incidentes/@incidente.Id/"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a class="btn btn-secondary" href="/incidentes/@incidente.Id/observaciones"><i class="fa-solid fa-list-check"></i></a>
+                    
+                    <form class="btn btn-secondary" method="post" action="/incidentes/@incidente.Id/cerrar">
+                        <button class="btn btn-secondary"><i class="fa-solid fa-times"></i></button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        }
+    </table>
+</div>

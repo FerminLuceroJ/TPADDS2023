@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="simple-persistence-unit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>models.entidades.persona.Miembro</class>
+        <class>models.entidades.persona.EstrategiaDeNotificacion</class>
+        <class>models.entidades.persona.MedioDeNotificacion</class>
+        <class>models.entidades.persona.TipoMiembro</class>
+        <class>models.entidades.persona.autentificacion.Usuario</class>
+        <class>models.entidades.ubicacion.Localizacion</class>
+        <class>models.entidades.ubicacion.Provincia</class>
+        <class>models.entidades.ubicacion.Departamento</class>
+        <class>models.entidades.ubicacion.Municipio</class>
+        <class>models.entidades.incidente.Incidente</class>
+        <class>models.entidades.incidente.Observacion</class>
+        <class>models.entidades.comunidad.Comunidad</class>
+        <class>models.entidades.organizaciones.Establecimiento</class>
+        <class>models.entidades.organizaciones.entidad.Entidad</class>
+        <class>models.entidades.organizaciones.entidad.TipoEntidad</class>
+        <class>models.entidades.notificacion.Notificacion</class>
+        <class>models.entidades.servicios.servicio.Servicio</class>
+        <class>models.entidades.servicios.servicio.PrestacionDeServicio</class>
+        <class>models.entidades.persona.Interes</class>
+
+        <properties>
+
+            <property name="hibernate.archive.autodetection" value="class"/>
+
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://dpg-cligcf5kt82s73fckr60-a.oregon-postgres.render.com/monitoreo_db"/>
+            <property name="hibernate.connection.username" value="monitoreo_user" />
+            <property name="hibernate.connection.password" value="hlUFpE7CnEnMNxz1pLyeAQkPcpPutNIN" />
+
+            <!--
+            <property name="hibernate.archive.autodetection" value="class"/>
+
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/dds_tp_grupo10"/>
+            <property name="hibernate.connection.username" value="root" />
+            <property name="hibernate.connection.password" value="" />
+            -->
+            <!--<property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver"/>
+            <property name="hibernate.connection.url" value="jdbc:hsqldb:mem:app-db"/>
+            <property name="hibernate.connection.username" value="sa"/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>-->
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="use_sql_comments" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+
+    </persistence-unit>
+
+</persistence>

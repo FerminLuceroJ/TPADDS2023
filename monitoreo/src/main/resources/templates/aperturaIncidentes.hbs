@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apertura de Incidente</title>
+
+  <link rel="stylesheet" href="/public/css/aperturaIncidentes.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+
+  <!-- Barra de Navegacion -->
+  {{#if esAdmin}}
+    {{> navbarAdmin}}
+  {{else}}
+    {{> navbarUsuario}}
+  {{/if}}
+
+  <!-- Barra de Navegacion -->
+
+  <!-- Formulario Apertura Incidente -->
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <form class="formulario" method="post" action="/incidentes">
+          <div class="mb-3 text-center">
+            <h2>Apertura de nuevo incidente</h2>
+          </div>
+          <div class="mb-3">
+            <label for="entidad" class="form-label">Entidad</label>
+            <select class="form-select" id="entidad" name="entidad">
+              {{> entidades}}
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="establecimiento" class="form-label">Establecimiento</label>
+            <select class="form-select" id="establecimiento" name="establecimiento">
+                {{> establecimientos}}
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="prestacionesDeServicios" class="form-label">Servicio</label>
+            <select class="form-select" id="servicio" name="servicio">
+                {{> servicios}}
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea class="form-control" id="descripcion" name="descripcion" rows="5" placeholder="Ingrese una descripción"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Formulario Apertura Incidente -->
+
+
+
+</body>
+
+</html>

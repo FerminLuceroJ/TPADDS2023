@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kErPpqsDn9woTMHeOzEbXuLYuPVxID6Wu4N4O3nHA2bsA8HASug6ao1SdSHict/UaGQA2WP/Kz2aIBuPYqY3ug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\End User\\OneDrive - UTN.BA\\Documentos\\Proyectos\\2023-tpa-mama-grupo-10\\MonitoreoCNET\\MonitoreoCNET\\MonitoreoCNET.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\End User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\End User\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\End User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\End User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

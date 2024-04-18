@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel = "stylesheet" href="/public/css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+  
+      <!-- Barra de Navegacion -->
+        <nav class="navbar navbar-expand-md navbar-light titulo">
+        
+          <div class="container-fluid d-flex">
+        
+            <div class="justify-content-start text-light barra-izq">
+                <a href="/home">
+                    <img class="utn-logo" src="/public/IMG/logo-utn.png" alt="LogoUTN" width="300" height="50">
+                </a>
+            </div>
+        
+            <div class="justify-content-end .d-flex barra-der">
+        
+              <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-dark fs-5 fw-medium">Nosotros</a>
+                  </li>
+                </ul>
+        
+        
+        
+              </div>
+            </div>
+        </nav>
+
+      <!-- Barra de Navegacion -->
+
+
+      <!-- Formulario de Login-->
+
+    <div class="m-0 vh-100 row justify-content-center align-items-center">
+        <form method="post" class="formularioInicioSesion w-25 p-3 rounded">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="contraseña" name="contraseña">
+            </div>
+            <div class="mb-3 form-check">
+              <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+              <input type="checkbox" class="form-check-input" id="checkboxSoyRobot" name="checkboxSoyRobot">
+            </div>
+            <button type="submit" class="btn btn-dark formularioInicioSesion">Enviar</button>
+          </form>
+    </div>
+
+
+    <!-- Formulario de Login-->
+
+</body>
+
+</html>

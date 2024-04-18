@@ -1,0 +1,34 @@
+.body {
+    background-color: #F4D03F;
+}
+
+
+.formularioInicioSesion {
+    background-color: #AEAFAD;
+}
+
+.titulo {
+    background-color: #AEAFAD;
+}
+
+.utn-logo{
+    height: 100%;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*flex-wrap: wrap;
+    align-items: center;*/
+    width: 100vw;
+    min-height: 30vh;
+    /*display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;*/
+
+    padding: 15px;
+    
+}

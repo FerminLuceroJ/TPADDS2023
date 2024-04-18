@@ -1,0 +1,31 @@
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Servicio afectado</th>
+                <th>Establecimiento</th>
+                <th>Entidad</th>
+                <th>Descripcion</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+            <tbody>
+            {{#each incidentes}}
+                <tr>
+                    <td>{{this.servicioAfectado.servicio.nombre}}</td>
+                    <td>{{this.servicioAfectado.establecimiento.nombre}}</td>
+                    <td>{{this.servicioAfectado.establecimiento.entidad.nombre}}</td>
+                    <td>{{this.descripcion}}</td>
+                    <td>{{this.estado}}</td>
+                    <td>                 <!--No haria falta poner el /cerrar no? Con el que el metodo sea put/delete ya se contempla-->
+                          <a class="btn btn-secondary" href="/incidentes/{{this.id}}/"><i class="fa-solid fa-pen-to-square"></i></a>
+                          <a class="btn btn-secondary" href="/incidentes/{{this.id}}/observaciones"><i class="fa-solid fa-list-check"></i></a>
+                          <form  class="btn btn-secondary" method="post" action="/incidentes/{{this.id}}/cerrar">
+                            <button class="btn btn-secondary"><i method="post" class="fa-solid fa-times">
+                          </form>
+                          <!--<a method="post" class="btn btn-secondary" href="/incidentes/{{this.id}}/cerrar"><i method="post" class="fa-solid fa-times">-->
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>

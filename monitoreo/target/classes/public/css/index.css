@@ -1,0 +1,21 @@
+.body {
+    background-color: #F4D03F;
+}
+
+
+.formularioIndex {
+    background-color: #AEAFAD;
+}
+
+.titulo {
+    background-color: #AEAFAD;
+}
+
+.utn-logo{
+    height: 100%;
+}
+
+.nav-link {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
